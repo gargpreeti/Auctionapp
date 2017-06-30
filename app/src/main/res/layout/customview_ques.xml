@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_seller"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pro_pic_dummy"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+
+        <com.zoptal.eauction.common.MyTextView
+            android:id="@+id/tv_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much DHL to ?"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/img_seller"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/img_calndr"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/calendar1"
+            android:layout_marginRight="5dp"
+            android:alpha="0.5"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="3dp"/>
+
+        <com.zoptal.eauction.common.MyTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29 may 2017"
+            android:textSize="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/img_calndr"
+            android:layout_marginRight="5dp"
+            android:textColor="#a9a9a9"/>
+
+        <com.zoptal.eauction.common.MyTextView
+            android:id="@+id/tv_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_ques"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp"
+            android:textAlignment="viewEnd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#808080"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_below="@+id/tv_ans"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.4"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rel_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <com.zoptal.eauction.common.EditTextView
+            android:id="@+id/ed_ans"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="How much DHL to ?"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="top|left"
+            android:textSize="14dp"
+            android:padding="5dp"
+            android:background="@drawable/textfieldborder1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#808080"/>
+
+        <Button
+            android:id="@+id/btn_Ans"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Answer"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ed_ans"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:background="@color/coloroblue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

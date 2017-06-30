@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context="com.zoptal.eauction.main.RegisterActivity">
+
+    <com.zoptal.eauction.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundedborder"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/roundedborder">
+
+            <RelativeLayout
+                android:id="@+id/rel_logo"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/back_reglog">
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zoptal.eauction.common.MyTextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_usrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@+id/ed_username"
+                android:background="@drawable/textfieldborder1">
+
+                <ImageView
+                    android:id="@+id/img_usr"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@mipmap/user"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"/>
+                <com.zoptal.eauction.common.EditTextView
+                    android:id="@+id/ed_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColorHint="#808080"
+                    android:textColor="#808080"
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:imeOptions="actionNext"
+                    android:layout_below="@+id/tv_reg"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@+id/img_usr"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@drawable/blackcursor"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_below="@+id/rel_usrname"
+                android:background="@drawable/textfieldborder1">
+
+                <ImageView
+                    android:id="@+id/img_pass"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@mipmap/password"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <com.zoptal.eauction.common.EditTextView
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:textColorHint="#808080"
+                    android:textColor="#808080"
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:imeOptions="actionDone"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="14dp"
+                    android:layout_toRightOf="@+id/img_pass"
+                    android:textCursorDrawable="@drawable/blackcursor"/>
+</RelativeLayout>
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_forgotpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/coloroblue"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="160dp"
+                      android:layout_below="@+id/rel_pass"
+                    />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/register_button"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="LOGIN"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/tv_forgotpw"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_login"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true">
+
+
+                    <com.zoptal.eauction.common.MyTextView
+                        android:id="@+id/tv_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="7dp"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_login"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true">
+
+                    <com.zoptal.eauction.common.MyTextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By signing up,you agree to our"
+                        android:textColor="#808080"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+                    <com.zoptal.eauction.common.MyTextView
+                        android:id="@+id/tv_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms of Use &amp; Privacy Policy"
+                        android:textColor="@color/coloroblue"
+                        android:textSize="13dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_toRightOf="@+id/tv1"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.zoptal.eauction.common.InteractiveScrollView>
+    </RelativeLayout>

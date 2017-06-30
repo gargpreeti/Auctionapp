@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_headr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloroblue">
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/filter"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/work_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+
+
+    <com.zoptal.eauction.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_headr"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <com.zoptal.eauction.common.EditTextView
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:hint="Name"
+                                android:textColorHint="#808080"
+                android:textColor="#808080"
+                android:singleLine="true"
+                android:capitalize="sentences"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="20dp"
+                android:textSize="14dp"
+                android:layout_gravity="top|left"
+                android:focusable="true"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+
+            <com.zoptal.eauction.common.EditTextView
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:hint="Email id"
+                android:textColorHint="#808080"
+                android:textColor="#808080"
+                android:singleLine="true"
+                android:capitalize="sentences"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="20dp"
+                android:textSize="14dp"
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+            <com.zoptal.eauction.common.EditTextView
+                android:id="@+id/ed_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:hint="Subject"
+                android:textColorHint="#808080"
+                android:textColor="#808080"
+                android:singleLine="true"
+                android:capitalize="sentences"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="20dp"
+                android:textSize="14dp"
+
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+
+
+            <com.zoptal.eauction.common.EditTextView
+                android:id="@+id/ed_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:hint="Message"
+                android:minLines="5"
+                android:textColorHint="#808080"
+                android:textColor="#808080"
+                android:maxHeight="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentTop="true"
+                android:padding="20dp"
+                android:inputType="textMultiLine"
+                android:textSize="14dp"
+                android:gravity="top|left"
+
+                android:textCursorDrawable="@drawable/blackcursor"/>
+
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/save_button"
+                android:text="SEND"
+                android:textSize="18dp"
+                android:padding="15dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"/>
+
+
+        </LinearLayout>
+    </com.zoptal.eauction.common.InteractiveScrollView>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logo_icon"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
+

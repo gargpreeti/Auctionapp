@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Auction</string>
+    <string name="networkconnection">Please Check your internet connection</string>
+</resources>

@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_back"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="160dp"
+        android:id="@+id/img"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linr_timr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@mipmap/days_button">
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.zoptal.eauction.common.MyTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAYS"
+                android:textColor="#ffffff"
+                android:textSize="6dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="@mipmap/days_button">
+
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOURS"
+                android:textColor="#ffffff"
+                android:textSize="6dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="@mipmap/days_button">
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_minuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MINUTES"
+                android:textColor="#ffffff"
+                android:textSize="6dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="@mipmap/days_button">
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECONDS"
+                android:textColor="#ffffff"
+                android:textSize="6dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="140dp"
+            android:background="@mipmap/pricebutton_blue">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_dolr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:textSize="22dp"
+                android:text="$ "
+                android:textColor="#ffffff"/>
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                       android:layout_marginTop="22dp"
+                    android:layout_toRightOf="@+id/tv_dolr"
+                    android:textSize="17dp"
+                    android:text="100.00"
+                    android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rel_price"
+            >
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp"
+                    android:alpha="0.7"
+                    android:text="Android Phone"
+                    android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/price_bck"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@mipmap/price_button"/>-->
+
+
+</RelativeLayout>
+

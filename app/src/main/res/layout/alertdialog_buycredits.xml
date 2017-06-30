@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popupbck"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:background="@drawable/crosswhite"
+            android:layout_gravity="right"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/background_price"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_credit5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#ffffff">
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.250 K.D / 0.250"
+                android:textSize="13dp"
+                android:alpha="0.9"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_below="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fils pre auction"
+                android:textSize="12dp"
+                android:alpha="0.8"
+                android:textColor="#000000"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:alpha="0.7"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="26dp"
+                android:textColor="#000000"
+                android:textStyle="italic|bold"
+                android:layout_below="@+id/tv_credit"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/button_buynow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/coloroblue"
+                android:layout_centerVertical="true"
+             />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_credit10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/rel_credit5"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff">
+
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.000 K.D / 0.200"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:alpha="0.9"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_below="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fils pre auction"
+                android:textSize="12dp"
+                android:alpha="0.8"
+                android:textColor="#000000"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_credit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:alpha="0.7"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  10"
+                android:textSize="26dp"
+                android:textColor="#000000"
+                android:textStyle="italic|bold"
+                android:layout_below="@+id/tv_credit1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/button_buynow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/coloroblue"
+                android:layout_centerVertical="true"
+              />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_credit20"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/rel_credit10"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff">
+
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.000 K.D / 0.150"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:alpha="0.9"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_below="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fils pre auction"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:alpha="0.8"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_credit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:alpha="0.7"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  20"
+                android:textSize="26dp"
+                android:textColor="#000000"
+                android:textStyle="italic|bold"
+                android:layout_below="@+id/tv_credit3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/button_buynow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/coloroblue"
+                android:layout_centerVertical="true"
+               />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_credit35"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/rel_credit20"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff">
+
+
+
+            <com.zoptal.eauction.common.MyTextView
+                android:id="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.500 K.D / 0.100"
+                android:textSize="13dp"
+                android:alpha="0.9"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <com.zoptal.eauction.common.MyTextView
+                android:layout_below="@+id/tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fils pre auction"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:alpha="0.8"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_credit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textColor="#000000"
+                android:alpha="0.7"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  35"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:textStyle="italic|bold"
+                android:layout_below="@+id/tv_credit4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/button_buynow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/coloroblue"
+                android:layout_centerVertical="true"
+
+                />
+
+
+        </RelativeLayout>
+
+        <!--<com.zoptal.eauction.common.MyTextView-->
+        <!--android:id="@+id/tv_msg"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="alert message"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:layout_marginTop="120dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

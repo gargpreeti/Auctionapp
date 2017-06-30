@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zoptal.eauction">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name= "android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:configChanges="locale|orientation"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateAlwaysHidden">
+        <activity
+            android:name=".main.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="locale|orientation"/>
+        <activity
+            android:name=".main.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AboutusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.ContactusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".main.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".main.UserAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AddNewAuctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AuctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AuctionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MyBidsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MyAuctionDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".main.ForgotPwActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".main.TermsActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

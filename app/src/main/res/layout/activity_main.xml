@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+
+
+    <com.zoptal.eauction.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:layout_marginTop="45dp"
+
+        >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/tv_endsoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_gravity="center_horizontal"
+        android:background="@mipmap/end_soon_border"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/img_logo"
+        android:text="E N D   S O O N"
+        android:textColor="#000000"/>
+
+            <com.zoptal.eauction.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_below="@+id/img_logo"
+                android:text="No Data found"
+                android:textColor="#000000"/>
+
+            <com.zoptal.eauction.common.ExpandableHeightGridView
+        android:id="@+id/gridView_endsoon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="160dp"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_endsoon"
+        android:numColumns="2"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:fillViewport="true"
+        android:stretchMode="columnWidth" >
+    </com.zoptal.eauction.common.ExpandableHeightGridView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/tv_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/ective_button"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:text="A C T I V E"
+        android:textColor="#000000"/>
+
+            <com.zoptal.eauction.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_nodata1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_below="@+id/tv_active"
+                android:text="No Data found"
+                android:textColor="#000000"/>
+
+    <com.zoptal.eauction.common.ExpandableHeightGridView
+        android:id="@+id/gridView_active"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="160dp"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_active"
+        android:numColumns="2"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:stretchMode="columnWidth"
+        android:fillViewport="true">
+    </com.zoptal.eauction.common.ExpandableHeightGridView>
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+         <com.zoptal.eauction.common.MyTextView
+            android:id="@+id/tv_expired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/expired_auctions_button"
+            android:gravity="center"
+             android:textSize="14dp"
+             android:textAlignment="center"
+            android:text="E X P I R E D  A U C T I O N S "
+            android:textColor="#000000"/>
+
+            <com.zoptal.eauction.common.MyTextView
+                android:visibility="gone"
+                android:id="@+id/tv_nodata2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_below="@+id/tv_expired"
+                android:text="No Data found"
+                android:textColor="#000000"/>
+
+            <com.zoptal.eauction.common.ExpandableHeightGridView
+            android:id="@+id/gridView_expired"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="160dp"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/tv_expired"
+                android:numColumns="2"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:stretchMode="columnWidth"
+                android:fillViewport="true">
+        </com.zoptal.eauction.common.ExpandableHeightGridView>
+</LinearLayout>
+
+    </LinearLayout>
+    </com.zoptal.eauction.common.InteractiveScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloroblue">
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/filter"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/work_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logo_icon"
+        android:layout_marginTop="22dp"/>
+</RelativeLayout>

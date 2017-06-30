@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/popup_sheet">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/linr_bidprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp"
+        >
+
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/cricle_3"
+        android:text="5 K.D"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/cricle_3"
+        android:text="4 K.D"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/img_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/cricle_3"
+        android:text="3 K.D"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <com.zoptal.eauction.common.MyTextView
+        android:id="@+id/img_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/cricle_3"
+        android:text="2 K.D"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
+
+</RelativeLayout>

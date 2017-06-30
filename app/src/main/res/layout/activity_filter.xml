@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_headr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloroblue">
+
+        <ImageView
+            android:id="@+id/img_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/filter"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/work_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+    <com.zoptal.eauction.common.InteractiveScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_headr"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_below="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   >
+            <RelativeLayout
+                android:id="@+id/rel_electonic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textfieldborder_blue1">
+
+
+                <RelativeLayout
+                    android:layout_width="210dp"
+                    android:layout_height="100dp"
+                    android:background="@color/coloroblue"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_elect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/electricals_w"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                    <com.zoptal.eauction.common.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_elect"
+                        android:text="Electricals &amp; Electronics"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="12dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#ffffff"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/yellow_cricle"
+                            android:text="2"
+                          android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                            </RelativeLayout>
+               </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+         <RelativeLayout
+                    android:id="@+id/rel_computr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img_computr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/computers_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_computr"
+                            android:text="Computers"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#ffffff"/>
+
+
+                    </RelativeLayout>
+         </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:background="@mipmap/yellow_cricle"
+                 android:text="2"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true" >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:textColor="#ffffff"
+                     android:textSize="16dp"
+                     android:textStyle="bold"
+                     android:text="2"/>
+
+             </RelativeLayout>
+            </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                              android:id="@+id/rel_electfind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_elect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text="Electricals &amp; Electronics"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_below="@+id/tv_elect"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#a9a9a9" />
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view11"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view11"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_below="@+id/tv4"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#a9a9a9" />
+
+                <Button
+                    android:id="@+id/btn_find1"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/find_button"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_cmputrfind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_cmputr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text="C O M P U T E R"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_below="@+id/tv_cmputr"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_mob"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/mobile_phones_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_mobile"
+                            android:text="Mobile phones"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#ffffff"/>
+
+                    </RelativeLayout>
+</RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:text="2"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+           <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_videogame"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/video_games_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_video"
+                            android:text="Video Games"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#ffffff"/>
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:text="2"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_mobilephnfind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_mob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text="M O B I L E  P H O N E S"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_below="@+id/tv_mob"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <com.zoptal.eauction.common.MyTextView
+                 android:id="@+id/view99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_below="@+id/view9"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_91"
+                    android:layout_below="@+id/view9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <View
+                    android:id="@+id/view122"
+                    android:layout_below="@+id/view99"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <View
+                    android:layout_below="@+id/tv_91"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#a9a9a9" />
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_below="@+id/view122"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+                <View
+
+                    android:layout_below="@+id/tv33"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view122"
+                    android:text="dummy text"
+                    android:textSize="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#a9a9a9"/>
+
+
+                <View
+                    android:layout_below="@+id/tv98"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#a9a9a9" />
+
+                <Button
+                    android:id="@+id/btn_find2"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/find_button"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_videogamefind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_videogame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text="V I D E O  G A M E S"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_below="@+id/tv_videogame"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_jewellwery"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_jwelry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/jewellery_accessories_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_jwelry"
+                            android:text="Jewellery &amp; Accessories"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="7dp"
+                            android:textColor="#ffffff"/>
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_birds"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_bird"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/birds_animals_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_bird"
+                            android:text="Birds &amp; Animals"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#ffffff"/>
+                    </RelativeLayout>
+</RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_jewelleryfind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_jwery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text=" Jewellery &amp; Accessories "
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_below="@+id/tv_jwery"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_land"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_sea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/land_sea_supplies_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_sea"
+                            android:text="Land &amp; Sea supplies"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="7dp"
+                            android:textColor="#ffffff"/>
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1">
+
+             <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                 android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_automotive"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/automotive_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_auto"
+                            android:text="Automotive"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#ffffff"/>
+                    </RelativeLayout>
+
+          </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_seafind"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_sea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text=" Land &amp; Sea supplies"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_below="@+id/tv_sea"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_collect"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/collectables_rarities_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_collect"
+                            android:text="Collectables &amp; Rarities"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="6dp"
+                            android:textColor="#ffffff"/>
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/textfieldborder_blue1"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_miscell"
+                        android:layout_width="210dp"
+                        android:layout_height="100dp"
+                        android:background="@color/coloroblue"
+                        android:layout_margin="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_miscel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/miscellaneous_w"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <com.zoptal.eauction.common.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_miscel"
+                            android:text="Miscellaneous"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12dp"
+                            android:layout_marginTop="6dp"
+                            android:textColor="#ffffff"/>
+                    </RelativeLayout>
+  </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@mipmap/yellow_cricle"
+                        android:text="2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="#ffffff"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:text="2"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rel_collectfind"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/tooltip_left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp">
+
+
+                <com.zoptal.eauction.common.MyTextView
+                    android:id="@+id/tv_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_computr"
+                    android:text=" Collectables &amp; Rarities"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_below="@+id/tv_collect"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:alpha="0.3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#a9a9a9" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.zoptal.eauction.common.InteractiveScrollView>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/logo_icon"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
+
+

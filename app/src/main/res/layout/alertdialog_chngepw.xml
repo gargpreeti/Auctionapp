@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popupbck"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:background="@drawable/crosswhite"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <com.zoptal.eauction.common.EditTextView
+            android:id="@+id/ed_oldpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+            android:hint="Old Password"
+            android:textColorHint="#808080"
+            android:textColor="#808080"
+            android:singleLine="true"
+            android:capitalize="sentences"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="20dp"
+            android:textSize="14dp"
+            android:textCursorDrawable="@drawable/blackcursor"/>
+
+        <com.zoptal.eauction.common.EditTextView
+            android:id="@+id/ed_newpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+            android:hint="New Password"
+            android:layout_below="@+id/ed_oldpw"
+            android:textColorHint="#808080"
+            android:textColor="#808080"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:capitalize="sentences"
+            android:imeOptions="actionNext"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="20dp"
+            android:textSize="14dp"
+            android:textCursorDrawable="@drawable/blackcursor"/>
+
+        <com.zoptal.eauction.common.EditTextView
+            android:id="@+id/ed_confrmpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EFEFEF"
+            android:hint="Confirm Password"
+            android:textColorHint="#808080"
+            android:layout_below="@+id/ed_newpw"
+            android:textColor="#808080"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:capitalize="sentences"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="20dp"
+            android:textSize="14dp"
+            android:textCursorDrawable="@drawable/blackcursor"/>
+
+        <Button
+            android:layout_below="@+id/ed_confrmpw"
+            android:id="@+id/btn_save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/save_button"
+            android:text="SAVE"
+            android:textSize="18dp"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
